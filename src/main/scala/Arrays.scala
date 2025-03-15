@@ -1,4 +1,5 @@
-object Main {
+import scala.collection.mutable.WrappedArray
+object ArrayMain {
   def main(args: Array[String]): Unit = {
     //create an array
     val fruits = Array("Apple", "Banana", "Orange")
@@ -35,5 +36,10 @@ object Main {
     val emptyArray=Array.empty[Int]
     val sizedArray = new Array[String](3)
 
+    //Scala wraped array
+    val wrapped = WrappedArray.make(numbers)
+
   }
+
+    
 }
