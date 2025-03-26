@@ -23,6 +23,30 @@ object OopMain {
     val employee =new Employee("Bob",1995, "SE")
     employee.celebrateBirthday()
 
+
+
+    //Abstract
+    abstract class Animal{
+      def sound():String //Abstract method (no implementation)
+      def action():String= //Concrete method (has implementation)
+        "sleeping.."
+    } 
+    class Dog extends Animal{
+      def sound():String=
+        "Woof"
+    }
+    class Cat extends Animal{
+      def sound():String=
+        "Meow"
+    }
+    val dog=new Dog()
+    val cat=new Cat()
+
+    println(dog.sound())
+    println(cat.sound())
+    println(dog.action())
+
+
     
 
 
