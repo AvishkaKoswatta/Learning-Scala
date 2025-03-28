@@ -28,7 +28,7 @@ object OopMain {
     //Abstract
     abstract class Animal{
       def sound():String //Abstract method (no implementation)
-      def action():String= //Concrete method (has implementation)
+      def action():String= //Concrete method (has implementation) 
         "sleeping.."
     } 
     class Dog extends Animal{
