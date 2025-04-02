@@ -4,6 +4,8 @@ object SingletonObject {
     }
 }
 
+
+
 object Main extends App {
     SingletonObject.logMessage("Hello")
 }
